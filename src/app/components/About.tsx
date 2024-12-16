@@ -1,11 +1,10 @@
-import Image from 'next/image';  
-import astronaut from '../public/astronaut.png'; // مسیر تصویر فضانورد  
-import { FaUsers, FaBriefcase, FaGlobe, FaClipboardList } from 'react-icons/fa'; // آیکون‌ها  
+import Image from 'next/image';   
+import { FaUsers, FaBriefcase, FaGlobe, FaClipboardList } from 'react-icons/fa'; 
 
 const About = () => {  
   return (  
     <div className="flex flex-col items-center min-h-screen bg-black text-white">  
-      <Image src={astronaut} alt="Astronaut" className="object-cover h-60" />  
+      <Image src={'/public/images/1 6.png'} alt="Astronaut" className="object-cover h-60" />  
 
       <div className="text-center mt-8">  
         <h2 className="text-3xl font-bold">— ABOUT US</h2>  
