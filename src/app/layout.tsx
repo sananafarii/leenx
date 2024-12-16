@@ -7,6 +7,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import News from './components/news';
+import Home from './components/Home';
 import { ReactNode } from 'react';
 
 const Layout = ({ children }: { children: ReactNode }) => {
