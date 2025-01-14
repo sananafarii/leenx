@@ -1,51 +1,98 @@
-import Image from 'next/image';   
-import { FaUsers, FaBriefcase, FaGlobe, FaClipboardList } from 'react-icons/fa'; 
+import React from 'react';  
+import Image from 'next/image';
+import { Star, Diamond, Building2, Globe } from 'lucide-react';  
 
-const About = () => {  
-  return (  
-    <div className="flex flex-col items-center min-h-screen bg-black text-white">  
-      <Image src={'/public/images/1 6.png'} alt="Astronaut" className="object-cover h-60" />  
+export default function AboutSection() {  
+  const stats = [  
+    {  
+      icon: <Star className="w-6 h-6 text-blue-400" />,  
+      number: "10",  
+      prefix: "",  
+      label: "Years of\nExperience"  
+    },  
+    {  
+      icon: <Diamond className="w-6 h-6 text-blue-400" />,  
+      number: "15",  
+      prefix: "",  
+      label: "Skilled\nProfessional"  
+    },  
+    {  
+      icon: <Building2 className="w-6 h-6 text-blue-400" />,  
+      number: "24",  
+      prefix: "",  
+      label: "Visited\nConferences"  
+    },  
+    {  
+      icon: <Globe className="w-6 h-6 text-blue-400" />,  
+      number: "1K",  
+      prefix: "+",  
+      label: "Projects\nWorld Wide"  
+    }  
+  ];  
 
-      <div className="text-center mt-8">  
-        <h2 className="text-3xl font-bold">— ABOUT US</h2>  
-        <p className="mt-2">Our expertise, as well as our passion for web design, sets us apart from other agencies.</p>  
+return (
+    <div className="min-h-screen bg-black text-white relative overflow-hidden py-20">
+      {/* Background Image */}
+        <Image
+          src="/images/p01(1).png"
+          alt="Space background"
+          layout="fill"
+          className="object-cover opacity-50"
+        />
+      
+     
+
+
+      {/* Content Container */}  
+      <div className="container mx-auto px-4 relative z-10">  
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-20">  
+          {/* Left side - Astronaut */}  
+          <div className="lg:w-1/2">  
+            <img  
+              src="/images/1 6.png"  
+              alt="Floating astronaut"  
+              className="w-full h-auto max-w-lg mx-auto animate-float"  
+            />  
+          </div>  
+
+          {/* Right side - Content */}  
+          <div className="lg:w-1/2">  
+            <h2 className="text-4xl font-bold mb-6">—ABOUT US</h2>  
+            <p className="text-gray-300 text-lg mb-16">  
+              Our expertise, as well as our passion for web design, sets us apart from other agencies.  
+            </p>  
+
+            {/* Stats Grid */}  
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">  
+              {stats.map((stat, index) => (  
+                <div key={index} className="text-center group">  
+                  <div className="w-16 h-16 mx-auto mb-4 bg-blue-900/30 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:bg-blue-700/50 transition-all duration-300">  
+                    {stat.icon}  
+                  </div>  
+                  <div className="text-3xl font-bold mb-2">  
+                    {stat.number}{stat.prefix}  
+                  </div>  
+                  <div className="text-sm text-gray-400 whitespace-pre-line">  
+                    {stat.label}  
+                  </div>  
+                </div>  
+              ))}  
+            </div>  
+          </div>  
+        </div>  
       </div>  
 
-      <div className="flex justify-around w-full mt-10">  
-        <div className="flex flex-col items-center">  
-          <div className="bg-blue-500 text-white rounded-full p-6">  
-            <FaUsers size={30} />  
-          </div>  
-          <span className="text-4xl font-bold mt-2">10</span>  
-          <span>Years of Experience</span>  
-        </div>  
-
-        <div className="flex flex-col items-center">  
-          <div className="bg-blue-500 text-white rounded-full p-6">  
-            <FaBriefcase size={30} />  
-          </div>  
-          <span className="text-4xl font-bold mt-2">15</span>  
-          <span>Skilled Professionals</span>  
-        </div>  
-
-        <div className="flex flex-col items-center">  
-          <div className="bg-blue-500 text-white rounded-full p-6">  
-            <FaClipboardList size={30} />  
-          </div>  
-          <span className="text-4xl font-bold mt-2">21</span>  
-          <span>Visited Conferences</span>  
-        </div>  
-
-        <div className="flex flex-col items-center">  
-          <div className="bg-blue-500 text-white rounded-full p-6">  
-            <FaGlobe size={30} />  
-          </div>  
-          <span className="text-4xl font-bold mt-2">1K</span>  
-          <span>Projects Worldwide</span>  
-        </div>  
-      </div>  
+      {/* Floating animation */}  
+      <style jsx>{`  
+        @keyframes float {  
+          0% { transform: translateY(0px); }  
+          50% { transform: translateY(-20px); }  
+          100% { transform: translateY(0px); }  
+        }  
+        .animate-float {  
+          animation: float 6s ease-in-out infinite;  
+        }  
+      `}</style>  
     </div>  
   );  
-};  
-
-export default About;
+}
