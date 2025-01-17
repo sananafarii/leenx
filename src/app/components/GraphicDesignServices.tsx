@@ -35,14 +35,7 @@ const GraphicDesignServices = () => {
   return (
     <div className="min-h-screen bg-[#0A0F1C] text-white relative overflow-hidden">
       {/* Stars Background */}
-      <div className="absolute inset-0 z-0">
-             <Image
-               src="/images/p01(1).png"
-               alt="Space background"
-               fill
-               className="object-cover opacity-50"
-             />
-           </div>
+     
 
 
       {/* Top Icons */}

@@ -1,23 +1,26 @@
 import React from 'react';
-import { Image, Layout, Pen } from 'lucide-react';
+import { Image as LucideImage, Layout, Pen } from 'lucide-react';
 
 const SpaceDesign = () => {
   return (
     <div className="min-h-screen bg-[#000814] bg-opacity-95 relative overflow-hidden">
-       <div className="absolute inset-0 z-0">
-              <Image
-                src="/images/p01(1).png"
-                alt="Space background"
-                fill
-                className="object-cover opacity-50"
-              />
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: 'url(/images/p01(1).png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          opacity: 0.5,
+        }}
+      />
 
- 
-      <div className="container mx-auto px-4 py-12">
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Service Cards */}
           {[
-            { icon: <Image />, title: 'POSTER DESIGN' },
+            { icon: <LucideImage />, title: 'POSTER DESIGN' },
             { icon: <Layout />, title: 'LAYOUT DESIGN' },
             { icon: <Pen />, title: 'CONTENT DESIGN' }
           ].map((service, index) => (
@@ -80,7 +83,6 @@ const SpaceDesign = () => {
           </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };

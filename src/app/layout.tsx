@@ -13,8 +13,13 @@ import HeroSection from './components/HeroSection';
 import GraphicDesignServices from './components/GraphicDesignServices';
 import React, { ReactNode } from 'react';
 import SpaceDesign from './components/spacedesign';
-import AboutPage from './components/AboutUs';
-
+import SpaceAbout from './components/SpaceAbout';
+import TimelineStats from './components/TimelineStats';
+import ServicesShowcase from './components/ServicesShowcase';
+import PortfolioHero from './components/PortfolioHero';
+import AppShowcase from './components/AppShowcase';
+import AboutUS from './components/AboutUs';
+import MiniPortfolio from './components/MiniPortfolio';
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <html lang="en">
@@ -34,7 +39,20 @@ const Layout = ({ children }: { children: ReactNode }) => {
           <HeroSection />
           <GraphicDesignServices />
           <SpaceDesign />
-          <AboutPage />
+          <Contact />
+          <LastPage />
+          <SpaceAbout />
+          <AboutUS />
+          <Contact />
+          <LastPage />
+          <TimelineStats />
+          <PortfolioHero />
+          <MiniPortfolio />
+          <ServicesShowcase />
+          <PortfolioHero />
+          <AppShowcase />
+          <Contact />
+          <LastPage />
         </div>
       </body>
     </html>

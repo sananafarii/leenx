@@ -15,7 +15,6 @@ export default function LastPage() {
                className="object-cover opacity-50"
              />
 
-
       {/* Main content */}
       <div className="relative z-10">
         <div className="container mx-auto px-6 pt-8">
