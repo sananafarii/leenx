@@ -20,6 +20,11 @@ import PortfolioHero from './components/PortfolioHero';
 import AppShowcase from './components/AppShowcase';
 import AboutUS from './components/AboutUs';
 import MiniPortfolio from './components/MiniPortfolio';
+import SpaceContactHero from './components/SpaceContactHero';
+import SocialTestimonials from './components/SocialTestimonials';
+
+
+
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <html lang="en">
@@ -53,6 +58,9 @@ const Layout = ({ children }: { children: ReactNode }) => {
           <AppShowcase />
           <Contact />
           <LastPage />
+          <SpaceContactHero />
+          <SocialTestimonials />
+          <LastPage/>
         </div>
       </body>
     </html>
