@@ -32,15 +32,15 @@ const Layout = ({ children }: { children: ReactNode }) => {
         <title>Leenx Agency</title>
         <meta name="description" content="Leenx Agency - Web Design and Development" />
       </head>
-      <body>
-        <div className="flex flex-col min-h-screen">
-          <main className="flex-grow">{children}</main>
-          <Services />
-          <About />
-          <Portfolio />
+      <body className='bg-black'>
+       
+          <main className="">{children}</main>
+          {/* <Services />
+          <About /> */}
+          {/* <Portfolio />
           <Contact />
-          <News />
-          <LastPage />
+          <News /> */}
+          {/* <LastPage />
           <HeroSection />
           <GraphicDesignServices />
           <SpaceDesign />
@@ -60,8 +60,8 @@ const Layout = ({ children }: { children: ReactNode }) => {
           <LastPage />
           <SpaceContactHero />
           <SocialTestimonials />
-          <LastPage/>
-        </div>
+          <LastPage/> */}
+     
       </body>
     </html>
   );

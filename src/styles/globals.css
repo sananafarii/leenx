@@ -11,3 +11,9 @@
   scrollbar-width: none;
 }
   
+
+.main-page {
+  background: url("/image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
