@@ -13,7 +13,13 @@
   
 
 .main-page {
-  background: url("/image.jpg");
+  background: url("/images/bg-main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services-page {
+  background: url("/images/bg-services.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
