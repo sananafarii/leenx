@@ -23,3 +23,15 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.blog-page {
+  background: url("/images/bg-blog.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-page{
+  background: url("/images/Untitled-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
