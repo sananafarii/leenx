@@ -17,7 +17,7 @@ function NavBar() {
         <Link
           href="/"
           className={cx(
-            "hover:text-blue-400 h-10 rounded-[30px] flex items-center px-6 justify-center",
+            "hover:text-blue-400 h-10 rounded-[30px] flex items-center px-4 justify-center",
             pathname === "/" && "bg-[rgba(255,255,255,.25)]"
           )}
         >
@@ -26,7 +26,7 @@ function NavBar() {
         <Link
           href="/services"
           className={cx(
-            "hover:text-blue-400 h-10 rounded-[30px] flex items-center px-6 justify-center",
+            "hover:text-blue-400 h-10 rounded-[30px] flex items-center px-4 justify-center",
             pathname === "/services" && "bg-[rgba(255,255,255,.25)]"
           )}
         >
@@ -35,7 +35,7 @@ function NavBar() {
         <Link
           href="/about"
           className={cx(
-            "hover:text-blue-400  h-10 rounded-[30px] flex items-center px-6 justify-center",
+            "hover:text-blue-400  h-10 rounded-[30px] flex items-center px-4 justify-center",
             pathname === "/about" && "bg-[rgba(255,255,255,.25)]"
           )}
         >
@@ -44,7 +44,7 @@ function NavBar() {
         <Link
           href="/portfolio"
           className={cx(
-            "hover:text-blue-400 h-10 rounded-[30px] flex items-center px-6 justify-center",
+            "hover:text-blue-400 h-10 rounded-[30px] flex items-center px-4 justify-center",
             pathname === "/portfolio" && "bg-[rgba(255,255,255,.25)]"
           )}
         >
@@ -53,7 +53,7 @@ function NavBar() {
         <Link
           href="/contact"
           className={cx(
-            "hover:text-blue-400 h-10 rounded-[30px] flex items-center px-6 justify-center",
+            "hover:text-blue-400 h-10 rounded-[30px] flex items-center px-4 justify-center",
             pathname === "/contact" && "bg-[rgba(255,255,255,.25)]"
           )}
         >
@@ -62,7 +62,7 @@ function NavBar() {
         <Link
           href="/Blog"
           className={cx(
-            "hover:text-blue-400 h-10 rounded-[30px] flex items-center px-6 justify-center",
+            "hover:text-blue-400 h-10 rounded-[30px] flex items-center px-4 justify-center",
             pathname === "/Blog" && "bg-[rgba(255,255,255,.25)]"
           )}
         >

@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 
 import React, { ReactNode } from "react";
+import { outfit } from "./fonts";
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
@@ -12,7 +13,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
           content="Leenx Agency - Web Design and Development"
         />
       </head>
-      <body className="">
+      <body className={outfit.className}>
         <main className="">{children}</main>
       </body>
     </html>

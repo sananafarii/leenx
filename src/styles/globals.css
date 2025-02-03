@@ -35,3 +35,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.box-gradient {
+  border: 10px solid transparent; /* Makes space for the gradient */
+  border-image: linear-gradient(to bottom, #5CA8FF80, #ffffff80);
+  border-image-slice: 1;
+}
