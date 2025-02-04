@@ -2,35 +2,36 @@ import Image from "next/image";
 import NavBar from "./NavBar";
 import cx from "classnames";
 import { exo } from "./fonts";
-
+import astro from "./images/astro.png";
 export default function Home() {
   return (
     <div>
-      <div className="text-white pt-10 main-page px-56 min-h-screen">
+      <div className="text-white pt-1 md:pt-10 main-page px-2 md:px-56 min-h-screen">
+        {/* <Image
+          src="/images/bg-main.jpg"
+          alt="background"
+          fill
+          className="object-cover z-[-99]"
+        /> */}
         {/* Navigation */}
         <NavBar />
 
         {/* Main Content */}
-        <main className="flex">
-          <div className="z-10">
+        <main className="flex flex-wrap">
+          <div className="z-10 flex justify-center max-md:w-full">
             <Image
-              src="/images/astro.png"
+              src={astro}
               alt="Astronaut floating in space"
               width={360}
               height={535}
-              className="animate-float mt-20 ml-20 mr-[-80px]"
+              className="max-md:w-auto max-md:h-[150px] animate-float md:mt-20 md:ml-20 md:mr-[-80px]"
             />
-            <div className="mt-[-60px]">
-              <h3 className="font-semibold">Get in touch</h3>
-              <p className="flex items-center gap-2">E: linksteam@gmail.com</p>
-              <p className="flex items-center gap-2">T: +7 55667788</p>
-            </div>
           </div>
-          <div className="z-0 border-[10px] w-[145px] h-[455px] mt-14 box-gradient"></div>
+          <div className="hidden md:block z-0 border-[10px] w-[145px] h-[455px] mt-14 box-gradient"></div>
           <div className="ml-10 basis-[422px] flex flex-col items-start">
             <h1
               className={cx(
-                "flex text-6xl font-semibold mb-6 mt-28",
+                "flex text-4xl md:text-6xl font-semibold mb-6  mt-4 md:mt-28",
                 exo.className
               )}
             >
@@ -48,13 +49,23 @@ export default function Home() {
               apart from other agencies.
             </p>
 
-            <button className="self-end w-[180px] h-10 flex items-center justify-center border border-[#5CA8FF] rounded-full hover:bg-blue-600 transition-colors">
+            <button className="self-center md:self-end w-[180px] h-10 flex items-center justify-center border border-[#5CA8FF] rounded-full hover:bg-blue-600 transition-colors">
               Call Us
             </button>
           </div>
-
+          <div className="mt-5 md:mt-[-60px]">
+            <h3 className="font-semibold">Get in touch</h3>
+            <p className="flex items-center gap-2">E: linksteam@gmail.com</p>
+            <p className="flex items-center gap-2">T: +7 55667788</p>
+          </div>
           {/* Astronaut Image */}
         </main>
+      </div>
+      <div className="flex bg-gradient-to-r from-black to-[#415588] items-center text-white h-[102px] bg-blue-400 text-[45px] overflow-hidden text-nowrap">
+        <div className="">
+        . APP DESIGN . CREATIVE CONTE . UI.UX DESIGN . WEBSITE DESIGN SEO . APP
+        DESIGN . CREATIVE CONTE
+        </div>
       </div>
       <div className="h-[400px]">
         <h2>Our Services</h2>
